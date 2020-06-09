@@ -1,5 +1,8 @@
 package com.spring.mi.test.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -15,6 +18,8 @@ public class S {
 
 	String id;
 	
+	List<E> ep;
+	
 	public String getId() {
 		return id;
 	}
@@ -23,10 +28,22 @@ public class S {
 		this.id = id;
 	}
 
+	public S(String id, List<E> ep) {
+		super();
+		this.id = id;
+		this.ep = ep;
+	}
+
+	public S() {
+		super();
+	}
+
 	public S(String id) {
 		super();
 		this.id = id;
+		this.ep=new ArrayList<E>();
 	}
-	
+
+
 	
 }
