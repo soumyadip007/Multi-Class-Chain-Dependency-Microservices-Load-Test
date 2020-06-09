@@ -15,4 +15,18 @@ public class S {
 
 	String id;
 	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public S(String id) {
+		super();
+		this.id = id;
+	}
+	
+	
 }
