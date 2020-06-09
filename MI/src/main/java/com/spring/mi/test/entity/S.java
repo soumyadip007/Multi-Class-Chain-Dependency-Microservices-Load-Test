@@ -16,9 +16,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class S {
 
-	String id;
+	public String id;
 	
-	List<E> ep;
+	public List<E> ep;
 	
 	public String getId() {
 		return id;
@@ -36,6 +36,7 @@ public class S {
 
 	public S() {
 		super();
+		this.ep=new ArrayList<E>();
 	}
 
 	public S(String id) {
