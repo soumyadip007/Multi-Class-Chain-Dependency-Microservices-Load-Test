@@ -1,5 +1,7 @@
 package com.spring.mi.test.entity;
 
+import java.util.HashMap;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -13,7 +15,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class E {
 
-	String id;
+	public String id;
+	
+	public HashMap<String, String> hm=new HashMap<String, String>();
 	
 	public String getId() {
 		return id;
